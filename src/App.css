@@ -1,0 +1,46 @@
+/* using flex */
+.countries {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.country {
+  height: 200px;
+  width: 400px;
+  margin: 2rem;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.493) 0px 1px 4px;
+  position: relative;
+}
+.country img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: solid 1px rgb(158, 158, 158);
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+}
+
+/* using grid */
+/* .countries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.country {
+  margin: 2rem;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.493) 0px 1px 4px;
+  position: relative;
+}
+.country img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: solid 1px rgb(158, 158, 158);
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+} */
