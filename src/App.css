@@ -29,6 +29,8 @@
   top: -1rem;
 }
 .search-bar {
+  position: sticky;
+  top: 2rem;
   width: 50%;
   margin: 2rem;
   height: 30px;
