@@ -1,4 +1,5 @@
 /* using flex */
+.max-width,
 .countries {
   margin: 1rem;
   display: flex;
@@ -14,6 +15,9 @@
   box-shadow: rgba(0, 0, 0, 0.493) 0px 1px 4px;
   position: relative;
 }
+.country .population {
+  text-transform: lowercase;
+}
 
 .country img {
   height: 50px;
@@ -23,6 +27,40 @@
   position: absolute;
   right: -1rem;
   top: -1rem;
+}
+.search-bar {
+  width: 50%;
+  margin: 2rem;
+  height: 30px;
+  border-radius: 3px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.loader {
+  font-family: inherit;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid grey; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* using grid */
