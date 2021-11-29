@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import { useParams, useHistory } from "react-router-dom";
 
 class CountrySingle extends Component {
   render() {
-    return <div></div>;
+    return <div>single page for one component</div>;
   }
 }
 
