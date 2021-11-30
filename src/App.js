@@ -14,6 +14,7 @@ const RouteWrapper = (props) => {
   const params = useParams();
   return <CountrySingle params={params} {...props} />;
 };
+// class component cannot use param or match which are hooks, so we do this RouteWrapper
 const App = () => {
   return (
     <BrowserRouter>
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/countries" element={<CountriesList />} />
         <Route path="countries/:name" element={<RouteWrapper />} />
+        {/* :name for the dynamic name (biggest change in routes) */}
       </Routes>
     </BrowserRouter>
   );
