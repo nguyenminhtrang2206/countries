@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import axios from "axios";
 
 function getCountry(capital) {
-  return axios.get(`https://restcountries.com/v3.1/capital/${capital}`);
+  return axios.get(`https://restcountries.com/v2/capital/${capital}`);
 }
 
 function getWeather(capital) {
   return axios.get(
-    `https://api.openweathermap.org/data/2.5/weather?q=${capital}units=metric&appid=${process.env.REACT_APP_OPEN_API_KEY}`
+    `https://api.openweathermap.org/data/2.5/weather?q=${capital}&units=metric&appid=${process.env.REACT_APP_OPEN_API_KEY}`
   );
 }
 class CountrySingle extends Component {

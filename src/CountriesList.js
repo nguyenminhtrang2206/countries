@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import "./App.css";
 import CountriesCard from "./CountriesCard";
+import { Outlet } from "react-router-dom";
 
 class CountriesList extends Component {
   state = {
@@ -40,6 +41,7 @@ class CountriesList extends Component {
     if (!this.state.isLoading) {
       return (
         <div className="max-width">
+          <Outlet />
           <input
             className="search-bar"
             type="text"
