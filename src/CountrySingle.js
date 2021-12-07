@@ -38,13 +38,17 @@ class CountrySingle extends Component {
     }
     if (!this.state.isLoading) {
       return (
-        <div>
-          Right now it is {this.state.weather.main.temp} degrees in{" "}
-          {this.state.country.capital}
-          <img
-            src={`http://openweathermap.org/img/wn/${this.state.weather.weather[0].icon}@2x.png`}
-            alt={this.state.weather.weather[0].description}
-          />
+        <div className="single">
+          <div className="single-card">
+            <p>
+              Right now it is {this.state.weather.main.temp} degrees in{" "}
+              {this.state.country.capital}
+            </p>
+            <img
+              src={`http://openweathermap.org/img/wn/${this.state.weather.weather[0].icon}@2x.png`}
+              alt={this.state.weather.weather[0].description}
+            />
+          </div>
         </div>
       );
     }

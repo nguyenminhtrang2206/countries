@@ -11,16 +11,16 @@ const CountriesCard = ({
   currencies,
 }) => {
   return (
-    <Link to={capital}>
+    <Link className="normalizeLink" to={capital}>
       <div key={name} className="country">
         <h2>{name}</h2>
-        <p>{capital}</p>
+        <p>Capital: {capital}</p>
         <img src={flags.png} alt="flag" />
         <p className="population">
           Population: {number.formatNumber(population)}
         </p>
         <p>
-          Language(s):
+          Language(s):{" "}
           {languages.map((lang, i) => (
             <span key={i}>{lang.name} </span>
           ))}

@@ -14,24 +14,66 @@
   padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.493) 0px 1px 4px;
   position: relative;
+  border-radius: 5px;
+  background-color: white;
+}
+body {
+  background-color: rgb(37, 37, 37);
+}
+h1 {
+  font-size: 3rem;
+  color: wheat;
+}
+h2 {
+  text-align: center;
+  color: white;
+}
+.countries h2 {
+  color: rgb(37, 37, 37);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 4rem 0 5rem;
+}
+
+ul li {
+  list-style: none;
+  margin: 1rem;
+  display: inline-block;
+}
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: wheat;
+  padding: 0.5rem;
 }
 .country .population {
   text-transform: lowercase;
 }
 
+.normalizeLink {
+  color: black;
+  text-decoration: none;
+}
+
 .country img {
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   border-radius: 50%;
   border: solid 1px rgb(158, 158, 158);
   position: absolute;
-  right: -1rem;
-  top: -1rem;
+  right: -1.5rem;
+  top: -1.5rem;
 }
 .search-bar {
   position: sticky;
+  background-color: wheat;
+  z-index: 4;
   top: 2rem;
-  width: 50%;
+  width: 30%;
   margin: 2rem;
   height: 30px;
   border-radius: 3px;
@@ -46,10 +88,15 @@
   align-items: center;
   flex-direction: column;
 }
+
+.loading p {
+  color: white;
+}
 .loader {
   font-family: inherit;
-  border: 16px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid grey; /* Blue */
+
+  border: 16px solid #ffae00; /* Light grey */
+  border-top: 16px solid wheat; /* Blue */
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -63,6 +110,26 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+.single {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.single-card {
+  text-align: center;
+  height: 200px;
+  width: 400px;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.493) 0px 1px 4px;
+  position: relative;
+  border-radius: 5px;
+  background-color: wheat;
+}
+.single-card p {
+  color: black;
 }
 
 /* using grid */
